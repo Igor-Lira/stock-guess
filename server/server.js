@@ -33,4 +33,4 @@ app.get('/stock', function (req,res) {
         response.send ('ok')
     })
 })
-app.listen(8000)
+app.listen(8000|| process.env.PORT)
