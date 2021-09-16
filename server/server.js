@@ -30,6 +30,7 @@ app.get('/stock', function (req,res) {
         console.log (response);
         const stringStream = new StringStream();
         stringStream.consume(obj => console.log ("Row:", obj));
+        response.send ('ok')
     })
 })
 app.listen(8000)
